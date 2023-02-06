@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<!-- container는 하나 이상의 요소를 포괄하는 개체를 지칭하고 wrapper는 하나의 개체만을 포함하는 것을 뜻합니다 -->
+<html>
+
+    <head>
+        <title>HTML5 with Hanbit</title>
+        <meta charset="utf-8">
+        
+        <meta name="viewport"
+            content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <style>
+            body {
+                width: 960px;
+                margin: 0 auto;
+            }
+        </style>
+        <!-- 헤더 -->
+        <style>
+            
+         
+            article.main-con-left {
+                background-color: rgb(29, 172, 164);
+                color:floralwhite;
+                padding: 50px 10px 0px 10px;
+                margin: 0px 0px 30px;
+                text-align: right;
+                width: 680px;
+                height: 150px;
+                float: left;
+            }
+
+            article.main-con-right {
+                background-color: rgb(112, 218, 195);
+                color:rgb(29, 172, 164);
+                text-align: left;
+                padding: 0 30px 0 10px;
+                margin: 0px 0px 30px;
+                width: 280px;
+                height: 150px;
+                float: right;
+            }
+            .sub{
+
+                color: rgb(29, 172, 164)
+            }
+
+            .slide{
+                margin: auto;
+                width: 960px;
+            }
+           
+            .carousel-caption {
+                text-align: left;
+                color: #666 !important;
+                text-shadow: none !important;
+                right: 0 !important;
+                left: 50% !important;
+                width: 400px;
+
+            }
+            .carousel-control-next{
+                background-color: rgba(211, 211, 211, 0.5);
+            }
+        </style>
+
+    
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Hanbit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brand</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Media</a></li>
+                        <li><a class="dropdown-item" href="#">Edu</a></li>
+                        <li><a class="dropdown-item" href="#">Life</a></li>
+                        </ul>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Store</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">A</a></li>
+                        <li><a class="dropdown-item" href="#">B</a></li>
+                        <li><a class="dropdown-item" href="#">C</a></li>
+                        </ul>
+                    </li>  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Support</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">QnA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        
+        <div id="main-content">
+            <article class="main-con-left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam enim! Quae voluptatem id, cupiditate aliquam distinctio velit! Nisi asperiores deserunt maxime omnis hic fugit laborum iusto iste incidunt animi.</p>
+                
+            </article>
+            <article class="main-con-right">
+                <h1>Lorem </h1>
+            </article>
+        </div>
+
+        <div>      
+            <h1 class="sub">책소개</h1>
+        </div>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width: 100%">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image_0.jpg" alt="Make : 액션" class="mx-auto d-block" style="float:left">
+                <div class="carousel-caption">
+                    <h1>Make:액션</h1>
+                    <h2>라즈베리 파이와 아두이노로 움직임, 소리, 빛 출력하기</h2>
+                <p>Mauris imperdiet eros mi, et tempor est porttitor eget. Praesent mattis tellus eu neque pharetra,
+                    quis pulvinar sem rhoncus. Morbi maximus justo urna, ac malesuada nulla suscipit in.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image_1.jpg" alt="나도 피아노 잘 치면 소원이 없겠네" class="mx-auto d-block" style="float:left" >
+                <div class="carousel-caption">
+                    <h1>나도 피아노 잘 치면 소원이 없겠네</h1>
+                    <h2>왕초보를 위한 4주 완성 피아노 연주법</h2>
+                    <p>Nulla ipsum ante, viverra vitae elit non, laoreet sagittis ligula. Quisque tempor nisl augue, eu
+                        scelerisque tellus bibendum eu.</p>
+
+                </div> 
+            </div>
+            
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon" ></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <br>
+        <br>
+        <div id="main-footer">
+            <footer class="container">
+                <div>©1991-2017 Example. All rights reserved.</div>
+            </footer>
+        </div>
+    </body>
+
+</html>
